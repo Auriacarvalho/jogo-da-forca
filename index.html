@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo da Forca</h1>
+        <p>Tente adivinhar a palavra!</p>
+        <div id="word-display"></div>
+        <div id="feedback"></div>
+        <div id="hangman-container">
+            <pre id="hangman"></pre>
+        </div>
+        <p>Tentativas restantes: <span id="attempts">6</span></p>
+        <input type="text" id="letter-input" maxlength="1" placeholder="Digite uma letra">
+        <button onclick="checkLetter()">Tentar</button>
+        <button onclick="startNewGame()">Novo Jogo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
